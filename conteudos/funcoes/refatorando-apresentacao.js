@@ -4,15 +4,15 @@ function calcularFaixaEtaria (pessoa){
 
     if(pessoa.idade < 25){
 
-        console.log(`Sou ${pessoa.nome}, sou um(a) jovem de ${pessoa.idade} anos e sou ${pessoa.profissao}.\n`);
+        console.log(`Sou ${pessoa.nome}, sou um(a) jovem de ${pessoa.idade} anos e sou ${pessoa.profissao}\n.`);
 
     }else if (pessoa.idade < 65){
 
-        console.log(`Sou ${pessoa.nome}, sou um(a) adulto(a) de ${pessoa.idade} anos e sou ${pessoa.profissao}.\n`);
+        console.log(`Sou ${pessoa.nome}, sou um(a) adulto(a) de ${pessoa.idade} anos e sou ${pessoa.profissao}\n.`);
 
     }else {
         
-        console.log(`Sou ${pessoa.nome}, sou um(a) idoso(a) de ${pessoa.idade} anos e sou ${pessoa.profissao}.\n`);
+        console.log(`Sou ${pessoa.nome}, sou um(a) idoso(a) de ${pessoa.idade} anos e sou ${pessoa.profissao}\n.`);
     }
 
 }
@@ -29,7 +29,7 @@ calcularFaixaEtaria(pessoa1)
 
 const pessoa2 = {
     nome: `Pedro`,
-    idade: 66,
+    idade: 45,
     profissao: `Motoca`
 }
 calcularFaixaEtaria(pessoa2)
@@ -40,3 +40,12 @@ const pessoa3 = {
     profissao: `Estudante`
 }
 calcularFaixaEtaria(pessoa3)
+
+
+
+
+
+
+
+
+
