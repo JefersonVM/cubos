@@ -1,7 +1,7 @@
     
-    let letra = `F`;
+    let letra = `a`;
 
-    const palavras = [`Flauta`, `Abacaxi`, `Ameixa`, `Abacate`];
+    const palavras = [`flauta`, `abacaxi`, `ameixa`, `abacate`];
 
     
     let perde = 0;
