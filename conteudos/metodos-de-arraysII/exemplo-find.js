@@ -30,7 +30,7 @@ const nomes = [`João`, `Ana`, `José`];
 
 const resultado = nomes.find((nome) => {
 
-    return nome === `João`;
+    return nome === `Ana`;
 
 })
 
