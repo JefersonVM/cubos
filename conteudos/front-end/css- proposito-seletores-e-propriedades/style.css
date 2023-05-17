@@ -1,0 +1,20 @@
+
+div {
+    background-color: purple;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    margin: 5px;
+}
+.box-green {
+    background-color: green;
+}
+.box-orange {
+    background-color: orange;
+}
+#box-red {
+    background-color: red;
+}
