@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+   
+}
+body{
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 58px;
+    background-color: #1176AE;
+
+    padding: 18px 32px;
+}
+
+.header a {
+    color: white;
+}
+
+.section {
+    padding: 25px 32px;
+    color: rgb(71, 68, 68);
+}
+
+.card-product {
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    /* 
+        border-width: 1px;
+        border-style: solid;
+        border-color: lightgray;
+    */
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-right: 10px;
+
+    cursor: pointer;
+}
+
+.card-product img {
+    width: 100%;
+    height: 220px;
+}
+
+.footer {
+    background-color: #1176AE;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+
+    padding: 90px;
+}
+
+.footer a {
+    color: #ffffff;
+    text-transform: uppercase;
+}
