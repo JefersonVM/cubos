@@ -1,0 +1,31 @@
+/* body {
+    color: green;
+    background-color: orange;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+h1 {
+    border: 1px solid black;
+} */
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: #ff0000;
+}
+
+h3 {
+    color: rgb(255, 0, 0);
+}
+
+h4 {
+    color: hsl(0, 100%, 50%);
+}
+
+h5 {
+    color: rgba(255, 0, 0,0.5);
+}
