@@ -1,0 +1,155 @@
+:root {
+  --cyan: #5FB4A2;
+  --dark-blue: #203A4C;
+  --grayish-blue: #33323D;
+  --very-light-grey: #FAFAFA;
+  --light-grey: #EAEAEB;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  background-color: var(--very-light-grey);
+  scroll-behavior: smooth;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  display:flex;
+  justify-content:space-between;
+
+  margin: 50px 200px;
+}
+
+header ul {
+  display:flex;
+  justify-content: space-between;
+
+  width: 25%
+}
+
+header ul li {
+  display:inline-flex;
+  align-self: center;
+
+  font-family: 'Public Sans', sans-serif;
+  font-size: 12px;
+}
+
+header a {
+  color:var(--grayish-blue);
+}
+
+header a:visited:hover {
+  color: var(--cyan);
+}
+
+.before-footer {
+  display:flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100px;
+}
+
+.before-footer h1 {
+
+  width: 50%;
+
+  font-family: 'Ibarra Real Nova', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.bloco-separador {
+  width: 20%;
+}
+
+.before-footer a {
+  display:flex;
+  justify-content: center;
+
+  width:15%;
+  margin: 30px 0px;
+  padding: 13px 10px;
+  border: 1px solid var(--grayish-blue);
+
+  font-family: 'Public Sans', sans-serif;
+  font-size: 12px;
+  color:var(--grayish-blue);
+}
+
+.before-footer a:hover {
+  color: var(--very-light-grey);
+  background-color: var(--grayish-blue);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 70px;
+  padding: 0px 80px;
+  margin-top: 100px;
+
+  background-color: var(--grayish-blue);
+}
+
+.menu-footer {
+  display:flex;
+  justify-content: space-evenly;
+
+  width: 40%;
+
+  background-color: inherit;
+}
+
+.menu-footer img {
+  align-self: center;
+
+  background-color: inherit;
+}
+
+.menu-footer a {
+  align-self: center;
+  
+  font-family: 'Public Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+
+  background-color: inherit;
+  color: white;
+}
+
+.icons-footer {
+  display:flex;
+  justify-content: space-evenly;
+
+  width: 20%;
+
+  background-color: var(--grayish-blue);
+}
+
+.icons-footer a {
+  align-self: center;
+
+  background-color:inherit;
+}
+
+.icons-footer img {
+  background-color: inherit;
+}
+
+.menu-footer a:hover {
+  color: var(--cyan);
+}
