@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Sem React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/javascript">
+        const rootDiv = document.querySelector('#root');
+        const novaDiv = document.createElement('div');
+        const meuH1 = document.createElement('h1');
+        const meuH2 = document.createElement('h2');
+
+        rootDiv.appendChild(novaDiv);
+        novaDiv.appendChild(meuH1);
+        novaDiv.appendChild(meuH2);
+
+        meuH1.innerText ='Hello World!';
+        meuH2.innerText = Math.random();
+    </script>
+
+  </body>
+</html>
