@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React com JSX</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+      class HelloWorld extends React.Component {
+        render() {
+            const randon = Math.random();
+          return (
+            <div>
+              <h1>Hello World!</h1>
+              <h2>{randon}</h2>
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(<HelloWorld />, document.querySelector("#root"));
+    </script>
+  </body>
+</html>

@@ -1,25 +1,19 @@
 class HelloWorld extends React.Component {
   render() {
-    return (
+    return React.createElement(
+      "div",
+      {},
+      React.createElement("h1", {}, "Hello World!"),
       React.createElement(
-        'div',
+        "div",
         {},
-        React.createEment(
-          'h1',
-          {},
-          'Hello World!',
-        ),
-        React.createElement(
-          'div',
-          {},
-          React.createEment(
-            'h2',
-            {},
-            Math.random(),
-
+        React.createElement("h2", {}, Math.random())
       )
     );
   }
 }
 
-ReactDOM.render(React.createElement(HelloWorld), document.querySelector('#root'));
+ReactDOM.render(
+  React.createElement(HelloWorld),
+  document.querySelector("#root")
+);
