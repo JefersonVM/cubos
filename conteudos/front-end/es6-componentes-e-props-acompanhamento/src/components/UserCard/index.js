@@ -1,14 +1,14 @@
-import Imagem from "../../assets/minha-foto.jpg";
+
 import "./styles.css";
 
-export default function UserCard(props) {
-    console.log(props);
+export default function UserCard({name, jobRole, avatar}) {
+   
  
   return (
     <div className="user-card">
-      <img src={Imagem} alt="Minha foto" />
-      <strong>Jefeson Vieira</strong>
-      <span>Aluno Full Stack</span>
+      <img src={avatar} alt="Minha foto" />
+      <strong>{name}</strong>
+      <span>{jobRole}</span>
       <button>Connect</button>
     </div>
   );
