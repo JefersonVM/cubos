@@ -9,13 +9,7 @@
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 10px;
   }
-  .user-card img {
-    height: 180px;
-    width: 180px;
-    background-color: purple;
-    padding: 3px;
-    border-radius: 50%;
-  }
+
   .user-card strong {
     margin-top: 20px;
   }
@@ -23,7 +17,7 @@
     color: gray;
     font-size: 12px;
   }
-  .user-card button {
+  .btn-card {
     border: none;
     background-color: blueviolet;
     color: white;
