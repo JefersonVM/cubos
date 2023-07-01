@@ -4,4 +4,7 @@
     background-color: purple;
     padding: 3px;
     border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
