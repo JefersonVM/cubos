@@ -54,9 +54,9 @@ function App() {
           key={people.id}
           name={people.name}
           jobRole={people.jobRole}
-          following={people.following}
-          verify={people.verify}
+         
         >
+          
           <Avatar avatar={people.avatar} color={people.color} />
         </UserCard>
       ))}
