@@ -1,10 +1,8 @@
 .avatar-img {
-    height: 180px;
-    width: 180px;
-    background-color: purple;
-    padding: 3px;
-    border-radius: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

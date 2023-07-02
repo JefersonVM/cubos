@@ -1,8 +1,13 @@
-import './styles.css';
+import "./styles.css";
 
-export default function Avatar({avatar}) {
+export default function Avatar({ avatar, color }) {
   return (
-   <div className='avatar-img' style={{backgroundImage: `url(${avatar})`}}></div> 
- 
-    ) 
+    <div
+      className="avatar-img"
+      style={{
+        backgroundImage: `url(${avatar})`,
+        border: `4px solid ${color}`,
+      }}
+    />
+  );
 }

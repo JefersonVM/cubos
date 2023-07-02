@@ -1,7 +1,7 @@
 import "./App.css";
+
 import Avatar from "./components/Avatar";
-import UserCard from "./components/UserCard/index";
-import Imagem from "./assets/minha-foto.jpg";
+import UserCard from "./components/UserCard";
 
 const peoples = [
   {
@@ -10,9 +10,9 @@ const peoples = [
     avatar:
       "https://cdn.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_960_720.jpg",
     jobRole: "Desenvolvedora Frontend",
-    following: false,
+    following: true,
     color: "#c68ece",
-    verify: true,
+    verify: false,
   },
   {
     id: 2,
@@ -54,9 +54,9 @@ function App() {
           key={people.id}
           name={people.name}
           jobRole={people.jobRole}
-         
+          following={people.following}
+          verify={people.verify}
         >
-          
           <Avatar avatar={people.avatar} color={people.color} />
         </UserCard>
       ))}
