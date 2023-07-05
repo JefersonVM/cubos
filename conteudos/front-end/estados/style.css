@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+h1 {
+  color: white;
+}
+button {
+  margin: 20px;
+  cursor: pointer;
+  padding: 15px;
+  background-color: burlywood;
+  font-size: 20px;
+  color: white;
+}
