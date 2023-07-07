@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container div:first-child {
+  width: 30%;
+  border-right: 1px solid gray;
+}
+
+.container div:last-child {
+  width: 70%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  margin-top: 10px;
+  
+}
+
+li span:hover {
+    transform: scale(1.1);
+}
+
+.btn-del {
+  all: unset;
+  width: 20px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.btn-del:hover {
+  transform: scale(1.1);
+}
+
+input {
+    width: 180px;
+}
+
+.task-done {
+    text-decoration: line-through;
+}
+
+
