@@ -1,15 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import App2 from './App2';
-import App3 from './App3';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App4 from "./App4";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App3 />
+    <App4 />
   </React.StrictMode>
 );
 
