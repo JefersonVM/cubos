@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 64px;
+  width: 100vw;
+
+  background-color: #3f51b5;
+  color: #fff;
+  margin-bottom: 32px;
+  padding: 16px;
+}
+
+header h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+header button {
+  width: 300px;
+}
