@@ -31,11 +31,10 @@ li {
   justify-content: space-between;
   width: 200px;
   margin-top: 10px;
-  
 }
 
 li span:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .btn-del {
@@ -53,11 +52,9 @@ li span:hover {
 }
 
 input {
-    width: 180px;
+  width: 180px;
 }
 
 .task-done {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
-
-
