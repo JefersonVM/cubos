@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "../../components/Header";
+import Modal from "../../components/Modal";
 import Post from "../../components/Post";
 import "./style.css";
 
@@ -26,14 +27,22 @@ function Main() {
       text: "Texto qualquer Texto qualquer Texto qualquer Texto qualquer Texto qualquer Texto qualquer",
     },
   ]);
+
+  const [modalOpen, setModalOpen] = useState(false);
+
+  function handleToggleModal() {
+    setModalOpen(!modalOpen);
+  }
+
   return (
     <div className="container">
-      <Header />
+      <Header handleToggleModal={handleToggleModal} />
       <div className="container-posts">
         {posts.map((post) => (
-          <Post key={post.id} post= {post}/>
+          <Post key={post.id} post={post} />
         ))}
       </div>
+      <Modal handleToggleModal={handleToggleModal} modalOpen={modalOpen} setPosts={setPosts} posts={posts} />
     </div>
   );
 }
