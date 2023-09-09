@@ -1,0 +1,11 @@
+:root {
+    --primary-color: rgb(140, 213, 122);
+    --secondary-color: rgb(131, 123, 128);
+    --warning-color: orange;
+    --btn-text-color: white;
+    --title-color: rgb(4, 0, 0);
+
+    --red-100: rgb(228, 116, 116);
+    --red-200: rgb(162, 62, 62);
+    --red-300: rgb(227, 58, 58);
+  }
