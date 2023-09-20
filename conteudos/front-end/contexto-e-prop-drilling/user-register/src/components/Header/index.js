@@ -1,9 +1,11 @@
-import './styles.css'
+import "./styles.css";
+import { useContext } from "react";
+import UserContext from "../../contexts/UserContext";
 
-function Header ({name}) {
-    return (
-        <header>Bem vindo, {name}!</header>
-    )
+function Header() {
+  const { name } = useContext(UserContext);
+
+  return <header>Bem vindo, {name}!</header>;
 }
 
-export default Header
+export default Header;

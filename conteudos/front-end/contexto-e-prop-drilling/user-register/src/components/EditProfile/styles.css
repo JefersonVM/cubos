@@ -1,0 +1,28 @@
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+form label {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+form input {
+    margin-left: 5px;
+    width: 200px;
+}
+
+form button {
+    border: none;
+    height: 36px;
+    border-radius: 7px;
+    color: #ffff;
+    background-color: rgb(60, 165, 95);
+    margin-top: 15px;
+
+}
