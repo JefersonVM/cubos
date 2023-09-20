@@ -1,10 +1,10 @@
 import { useState } from "react";
+import useUser from "../../hooks/useUser";
 import "./styles.css";
-import { useContext } from "react";
-import UserContext from "../../contexts/UserContext";
+
 
 function EditProfile() {
-  const { setName, setAge } = useContext(UserContext);
+  const { setName, setAge } = useUser();
   const [localName, setLocalName] = useState("");
   const [localAge, setLocalAge] = useState("");
 

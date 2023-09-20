@@ -1,9 +1,8 @@
-import { useContext } from "react";
-import UserContext from "../../contexts/UserContext";
+import useUser from "../../hooks/useUser";
 import "./styles.css";
 
 function UserProfile() {
-  const { name, age } = useContext(UserContext);
+  const { name, age } = useUser();
   return (
     <div className="container-profile">
       <div>
