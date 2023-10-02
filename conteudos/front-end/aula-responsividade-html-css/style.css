@@ -1,11 +1,60 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
 }
 
 .second-text {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 h2 {
-    font-size: 2.8rem;
+  font-size: 2.8rem;
 }
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.container div {
+  width: 50%;
+  height: 100%;
+}
+
+.left {
+  background-color: green;
+}
+
+.center {
+    display: none;
+    background-color: indigo;
+}
+
+.right {
+  background-color: red;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .container div  {
+   height: 100px;
+
+  }
+
+  .center {
+    display: block;
+  }
+   
+  }
+
+
+
+    
+
