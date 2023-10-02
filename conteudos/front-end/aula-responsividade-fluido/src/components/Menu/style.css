@@ -1,0 +1,14 @@
+.menu {
+    display: flex;
+    color: #ffffff;
+}
+
+.menu li {
+    list-style: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    color: #FED530;
+}

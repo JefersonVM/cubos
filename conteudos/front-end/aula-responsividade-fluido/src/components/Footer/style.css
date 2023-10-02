@@ -1,0 +1,30 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+  color: #ffffff;
+  margin-top: 80px;
+  padding: 0 32px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  border-right: 1px solid grey;
+}
+
+.footer-left img {
+  width: 120px;
+  cursor: pointer;
+}
+
+.footer-right {
+  padding-left: 20px;
+}
+
+.footer-right p {
+  width: 1280px;
+}

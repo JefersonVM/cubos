@@ -1,0 +1,29 @@
+.container-card {
+    width: 200px;
+    height: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.container-title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.container-title h1 {
+    font-size: 20px;
+    margin: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
