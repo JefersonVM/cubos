@@ -1,9 +1,10 @@
 .container-home {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.7) 100%);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .section-movies {
@@ -11,6 +12,7 @@
   align-items: center;
   justify-content: center;
   padding: 0 32px;
+  flex-wrap: wrap;
 }
 
 
