@@ -13,7 +13,7 @@ create table usuarios (
   nome text,
   imagem text,
   username text not null unique,
-  emal text unique,
+  email text unique,
   site text,
   bio text,
   telefone text,

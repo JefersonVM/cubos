@@ -43,7 +43,7 @@ const obterPerfil = async (req, res) => {
 };
 
 const atualizarPerfil = async (req, res) => {
-  let { nome, email, senha, imagem, username, site, bio, telefone, genero } =
+  const { nome, email, senha, imagem, username, site, bio, telefone, genero } =
     req.body;
   const { id } = req.usuario;
 
@@ -64,36 +64,33 @@ const atualizarPerfil = async (req, res) => {
   try {
     if (senha) {
       if (senha.length < 5) {
-        return res.status(404).json("A senha deve ter no mínimo 5 caracteres");
+        return res.status(400).json("A senha deve ter no mínimo 5 caracteres");
       }
-      senha = await bcrypt.hash(senha, 10);
 
       if (email !== req.usuario.email) {
-        const emailUsuarioexiste = await knex("usuarios")
+        const emailUsuarioExiste = await knex("usuarios")
           .where({ email })
           .first();
-
-        if (emailUsuarioexiste) {
+        if (emailUsuarioExiste) {
           return res.status(400).json("O email já existe");
         }
       }
 
       if (username !== req.usuario.username) {
-        const usernameUsuarioexiste = await knex("usuarios")
+        const usernameUsuarioExiste = await knex("usuarios")
           .where({ username })
           .first();
-
-        if (usernameUsuarioexiste) {
+        if (usernameUsuarioExiste) {
           return res.status(400).json("O username já existe");
         }
       }
 
       const usuarioAtualizado = await knex("usuarios")
-        .where({ id: usuario.id })
+        .where({ id })
         .update({
           nome,
           email,
-          senha,
+          senha: await bcrypt.hash(senha, 10),
           imagem,
           username,
           site,
@@ -101,6 +98,33 @@ const atualizarPerfil = async (req, res) => {
           telefone,
           genero,
         });
+
+      if (!usuarioAtualizado) {
+        return res.status(400).json("O usuário não foi atualizado");
+      }
+
+      return res.status(200).json("Usuário atualizado com sucesso");
+    } else {
+      if (email !== req.usuario.email) {
+        const emailUsuarioExiste = await knex("usuarios")
+          .where({ email })
+          .first();
+        if (emailUsuarioExiste) {
+          return res.status(400).json("O email já existe");
+        }
+      }
+
+      const usuarioAtualizado = await knex("usuarios").where({ id }).update({
+        nome,
+        email,
+        imagem,
+        username,
+        site,
+        bio,
+        telefone,
+        genero,
+      });
+
       if (!usuarioAtualizado) {
         return res.status(400).json("O usuário não foi atualizado");
       }
